@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants">
+
+    <CheckBox
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:id="@+id/list_item_account_checked" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/list_item_account_title"
+                android:text="TEXT 1"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="start|center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/list_item_account_balance"
+                android:text="TEXT 2"
+                android:gravity="end|center"
+                android:layout_weight="1"
+                android:paddingEnd="2dp"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:textSize="16sp"
+                android:text="@string/currency_font_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/list_item_account_type"
+            android:text="CREDIT"
+            android:textSize="16sp"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/list_item_account_description" />
+    </LinearLayout>
+</LinearLayout>

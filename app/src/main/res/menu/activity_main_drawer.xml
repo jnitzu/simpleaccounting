@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_accounts"
+        android:title="@string/nav_accounts"/>
+
+    <item
+        android:id="@+id/nav_invoices"
+        android:title="@string/nav_invoices"/>
+    <item
+        android:id="@+id/nav_labels"
+        android:title="@string/nav_labels"/>
+
+    <group
+        android:id="@+id/nav_group_drive_sync"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_import_database"
+            android:title="@string/nav_import_database" />
+
+        <item
+            android:id="@+id/nav_export_database"
+            android:title="@string/nav_export_database" />
+
+    </group>
+
+    <group
+        android:id="@+id/group_2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_settings"
+            android:title="@string/nav_settings" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:title="@string/nav_about" />
+
+    </group>
+
+</menu>

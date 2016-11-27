@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner_sort_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="6dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center|start"
+            style="@style/SpinnerWhiteTheme" />
+
+        <Spinner
+            android:id="@+id/spinner_sort_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="6dp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center|end"
+            style="@style/SpinnerWhiteTheme" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox_show_paid_invoices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/WhiteCheckBox"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:text="@string/show_paid_invoices"/>
+
+    </LinearLayout>
+
+</LinearLayout>

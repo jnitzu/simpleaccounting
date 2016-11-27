@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item android:id="@+id/popup_menu_fab_account" android:title="@string/popup_add_account"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/popup_menu_fab_payment" android:title="@string/popup_add_payment"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/popup_menu_fab_invoice" android:title="@string/popup_add_invoice"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/popup_menu_fab_label" android:title="@string/popup_add_label"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

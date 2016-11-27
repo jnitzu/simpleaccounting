@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateDirectPaymentFragment"
+    android:paddingStart="25dp"
+    android:paddingEnd="25dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:paddingTop="6dp"
+        android:layout_height="50dp"
+        android:gravity="center|start"
+        android:text="@string/select_account"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/text_select_account" />
+
+    <View style="@style/Divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:text="@string/title"
+            android:textSize="@dimen/text_title_size"
+            android:id="@+id/text_payment_title" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textShortMessage"
+            android:textSize="@dimen/text_size"
+            android:id="@+id/edit_text_payment_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:text="@string/payment_amount"
+            android:textSize="@dimen/text_title_size"
+            android:id="@+id/text_payment_amount" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size"
+            android:id="@+id/edit_text_payment_amount" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:text="@string/payment_date"
+            android:textSize="@dimen/text_title_size"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center|start"
+            android:text="@string/add_date"
+            android:textSize="@dimen/text_size"
+            android:id="@+id/text_select_date" />
+
+    </LinearLayout>
+
+    <View style="@style/Divider"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="center|start"
+        android:text="@string/select_label"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/text_select_label" />
+
+    <View style="@style/Divider"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:text="@string/notes"
+            android:textSize="@dimen/text_title_size" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/text_size"
+            android:id="@+id/edit_text_notes" />
+    </LinearLayout>
+
+</LinearLayout>
